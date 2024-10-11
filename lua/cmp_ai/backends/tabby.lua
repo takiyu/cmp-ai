@@ -7,7 +7,7 @@ function Tabby:new(o)
   setmetatable(o, self)
   self.__index = self
   self.params = vim.tbl_deep_extend('keep', o or {}, {
-    base_url = 'http://127.0.0.1:8080/v1/completions',
+    base_url = 'http://localhost:8080/v1/completions',
     options = {},
   })
 
